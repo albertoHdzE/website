@@ -16,20 +16,20 @@ Mexico City, Mexico $\bullet$ +52 552 383 4438 $\bullet$ albertohernandezespinos
 
 \section{Professional Summary}
 \begin{itemize}
-\item AI researcher with over 10 years of experience leading scientific software development for universities and industry, specializing in artificial intelligence, cognitive science, and complexity science.
-\item Expertise in designing and deploying machine learning, deep learning, and causal AI models, with a proven track record of delivering impactful solutions (e.g., 53\% cloud cost reduction).
-\item Published with Oxford University and Oxford Immune Algorithmics, contributing to advancements in artificial intelligence, integrated information theory and algorithmic complexity.
-\item Skilled in remote collaboration, having worked globally for 7 years, and prepared to work with interdisciplinary AI teams.
-\item AI Engineer Lead at K-Square Group, driving AI integration and fostering innovation through agentic platforms and research.
+\item Applied AI researcher and engineer with over 10 years of experience across academic research and production systems, building Python-based ML and agentic workflows for analysis, retrieval, and decision support.
+\item Experience designing multi-agent systems, local LLM workflows, RAG/GraphRAG pipelines, knowledge-graph workflows, and observability layers for evaluation, orchestration, and tool use.
+\item Work includes document understanding, extraction, layout analysis, multimodal evaluation and local fine-tuning workflows, quantitative trading systems, and benchmarking of retrieval pipelines under fixed evaluation workflows.
+\item Published with Oxford University and Oxford Immune Algorithmics on integrated information and algorithmic complexity; currently AI Engineer Lead at K-Square Group.
 \end{itemize}
 
 \section{Skills \& Expertise}
 \begin{itemize}
-\item AI/ML Technologies: Python, TensorFlow, PyTorch, Scikit-learn, Keras, LangGraph, Ollama, ML Studio, RAG, Agents, MCP, Small Model Tuning, Multi-Agent Orchestration, Local LLM Orchestration, Tool-Use LLMs, Chain-of-Thought Prompting, Self-Reflection LLMs, LLM-as-a-Judge Patterns, Langfuse
-\item Programming Languages: Python, R, C++, SQL, Mathematica, FastAPI, React
-\item Cloud \& DevOps: GCP, AWS, Docker, FastAPI, Telemetry, Monitoring, Observability
-\item Data Science: Big Data, SQL/NoSQL, ETL, Pandas, NumPy, Matplotlib
-\item Domains: Artificial Intelligence, Complexity Science, Cognitive Science, Reinforcement Learning, Algorithmic Information Theory, Enhancing RAG with Complexity, Theoretical Limits on Intelligence of LLMs, Agentic LLM Reasoning, Emergent Collective Intelligence, Quantitative Trading, Agentic Trading Systems, Deterministic Strategy Generation
+\item Agentic / RAG Systems: LangGraph, Ollama, ML Studio, RAG, GraphRAG, knowledge-graph workflows, Agents, MCP, Multi-Agent Orchestration, Local LLM Orchestration, Langfuse. Relevant projects: \hyperlink{proj-hifi}{HiFi}, \hyperlink{proj-graphrag}{GraphRAG}, \hyperlink{proj-councilai}{CouncilAI}, \hyperlink{proj-contextforge}{ContextForge}, \hyperlink{proj-noesis}{Noesis}, \hyperlink{proj-ksonboarding}{KS-Onboarding}, \hyperlink{proj-agui}{AG-UI}.
+\item Evaluation / Observability: telemetry, monitoring, observability, fixed-workflow benchmarking, retrieval comparison, multimodal evaluation, local fine-tuning workflows. Relevant projects: \hyperlink{proj-hifi}{HiFi}, \hyperlink{proj-councilai}{CouncilAI}, \hyperlink{proj-contextforge}{ContextForge}.
+\item Python / ML Stack: Python, TensorFlow, PyTorch, Scikit-learn, Keras, SQL/NoSQL, ETL, Pandas, NumPy, Matplotlib. Relevant projects: \hyperlink{proj-councilai}{CouncilAI}, \hyperlink{proj-noesis}{Noesis}, \hyperlink{proj-stock}{Stock Prices Prediction}, \hyperlink{proj-mosaica}{MOSAICA}.
+\item Cloud / APIs: AWS, GCP, Docker, FastAPI, React. Relevant projects: \hyperlink{proj-hifi}{HiFi}, \hyperlink{proj-contextforge}{ContextForge}, \hyperlink{proj-noesis}{Noesis}.
+\item Applied Areas: document understanding, extraction, layout analysis, document and meeting analysis with OCR-enabled workflows, quantitative trading, reinforcement learning, complexity science, algorithmic information theory. Relevant projects: \hyperlink{proj-ksonboarding}{KS-Onboarding}, \hyperlink{proj-hifi}{HiFi}, \hyperlink{proj-noesis}{Noesis}, \hyperlink{proj-agui}{AG-UI}, \hyperlink{proj-stock}{Stock Prices Prediction}, \hyperlink{proj-causalbool}{CausalBool}, \hyperlink{proj-mosaica}{MOSAICA}.
+\item Programming Languages: Python, R, C++, SQL, Mathematica.
 \end{itemize}
 
 \section{Professional Experience}
@@ -85,81 +85,69 @@ Jun 2019--Jul 2022
 
 \section{Selected Projects}
 \begin{itemize}
-\item GraphRAG From Scratch
+\item \hypertarget{proj-graphrag}{}GraphRAG From Scratch
 \begin{itemize}
-\item Clean, mathematically explicit implementation of RAG, RAU, and GraphRAG for scientific comparison.
-\item Exposes embeddings, graph construction, traversal, and synthesis as separate components to study when graph-based retrieval improves multi-hop reasoning.
+\item Scientific baseline for RAG, RAU, and GraphRAG that separates retrieval, graph construction, synthesis, and knowledge-graph workflows for evaluation.
 \item Code: \url{https://github.com/albertoHdzE/GraphRAG-scratch}
 \end{itemize}
 
-\item HiFi
+\item \hypertarget{proj-hifi}{}HiFi
 \begin{itemize}
-\item Multi-agent automatic trading system built on a local agentic architecture that tunes different families of local LLMs through ML Studio for deterministic strategy creation.
-\item Integrates MCP, tools, ML/AI pipelines, ContextForge, Langfuse, deep telemetry, and monitoring for observable orchestration, evaluation, and control of trading workflows.
+\item Local multi-agent trading system with document understanding, multimodal evaluation, and local fine-tuning of LLM families through ML Studio, using MCP, ContextForge, Langfuse, and telemetry for deterministic strategy creation.
 \item Code: \url{https://github.com/albertoHdzE/HiFi}
 \end{itemize}
 
-\item CouncilAI V2 (AI POCs Feature Spanner)
+\item \hypertarget{proj-councilai}{}CouncilAI V2 (AI POCs Feature Spanner)
 \begin{itemize}
-\item Reproducible benchmarking harness and dashboard for comparing vector, graph, long-context, and managed-search retrieval substrates under a fixed agentic workflow.
-\item Measures latency, verifiability, and retrieval quality across multiple RAG pipelines using deterministic run artifacts and a React dashboard.
+\item Benchmark harness and dashboard for comparing vector, graph, knowledge-graph, long-context, and managed-search retrieval pipelines under a fixed agentic evaluation workflow.
 \item Code: \url{https://github.com/albertoHdzE/ai-pocs-feature-spanner}
 \end{itemize}
 
-\item ContextForge (k-mcp-farm)
+\item \hypertarget{proj-contextforge}{}ContextForge (k-mcp-farm)
 \begin{itemize}
 \item Open-source registry and proxy that federates MCP, A2A, and REST/gRPC APIs with centralized governance, discovery, and observability.
-\item Consolidates tools, agents, and APIs behind a clean endpoint for AI clients, with plugin extensibility and Kubernetes-ready deployment.
 \item Code: \url{https://github.com/albertoHdzE/k-mcp-farm}
 \end{itemize}
 
-\item AG-UI
+\item \hypertarget{proj-agui}{}AG-UI
 \begin{itemize}
-\item Pluggable agent-user interaction layer for human-machine communication in agentic applications.
-\item Supports interactive interfaces that make complex AI workflows more observable and usable.
+\item Agent-user interaction layer for observable human-in-the-loop interfaces supporting document-analysis workflows in agentic applications.
 \item Code: \url{https://github.com/albertoHdzE/agui}
 \end{itemize}
 
-\item CausalBool: Deterministic Causal Integration
+\item \hypertarget{proj-causalbool}{}CausalBool: Deterministic Causal Integration
 \begin{itemize}
-\item Physics-inspired algorithmic information theory for Boolean networks, deriving exact closed-form formulae for causal reconstruction without probabilistic assumptions.
-\item Implemented deterministic index algebra and ordering-aware invariances to scale information signatures (PID, Transfer Entropy) beyond combinatorial limits.
+\item Physics-inspired algorithmic information framework for Boolean causal networks with deterministic causal reconstruction and scalable information signatures.
 \item Code: \url{https://github.com/albertoHdzE/CausalBool}
 \end{itemize}
 
-\item Noesis: Agentic Agnostic Platform
+\item \hypertarget{proj-noesis}{}Noesis: Agentic Agnostic Platform
 \begin{itemize}
-\item Platform for creating AI/ML models (regression, classification, clustering, anomaly detection) using LangGraph, Ollama, local tuned models, FastAPI, and React.
-\item Applied to Fraud Detection in financial and insurance institutions.
+\item Agentic platform for building AI/ML models with LangGraph, Ollama, FastAPI, and React, including extraction-oriented workflows applied to fraud detection.
 \item Code: \url{https://github.com/KSProjectX/test-xx} (restricted access).
 \end{itemize}
 
-\item KS-Onboarding: Agentic Platform for Project Control and Onboarding
+\item \hypertarget{proj-ksonboarding}{}KS-Onboarding: Agentic Platform for Project Control and Onboarding
 \begin{itemize}
-\item Deep agents for organizing projects, analyzing documentation/meetings, generating insights, and responding to questions using local/external information, OCR, and voice recognition.
-\item Advanced RAG enhanced with complexity science based on high-level research (\url{https://arxiv.org/abs/2505.02581}).
+\item Agentic system for project and document analysis using OCR, extraction, layout-aware processing, voice recognition, and advanced RAG over local/external information.
 \item Code: \url{https://github.com/KSProjectX/KS-onboarding} (restricted access).
 \end{itemize}
 
-\item Agents for Automation of Running Tests
+\item \hypertarget{proj-tests}{}Agents for Automation of Running Tests
 \begin{itemize}
-\item Agentic platform using user stories/use cases in natural language or code to dynamically create pytest test code and report coverage.
+\item Agentic platform that turns user stories or code into pytest suites and coverage reports.
 \item Code: \url{https://github.com/Sucharita8/KS-qe-platform} (restricted access).
 \end{itemize}
 
-\item Stock Prices Prediction
+\item \hypertarget{proj-stock}{}Stock Prices Prediction
 \begin{itemize}
-\item Developed predictive and autonomous decision-making models for stock prices based on Deep Reinforcement Learning and advanced ML approaches.
-\item Integrated time-series analysis and reinforcement learning.
-\item Deployed on cloud platforms for real-time forecasting.
+\item Deep reinforcement learning and ML workflows for stock price prediction and autonomous trading decisions.
 \item GitHub: \url{https://github.com/albertoHdzE/finance_1}, Detailed explanation: \url{https://sites.google.com/view/complexai/FINANCE}.
 \end{itemize}
 
-\item MOSAICA: DNA Complexity Analysis
+\item \hypertarget{proj-mosaica}{}MOSAICA: DNA Complexity Analysis
 \begin{itemize}
-\item Investigated DNA sequence complexity using Machine learning with Python and Mathematica.
-\item Correlated algorithmic complexity with DNA curvature.
-\item Results published in academic papers.
+\item Machine learning and algorithmic complexity analysis of DNA sequences, linking genomic information content to DNA curvature.
 \item GitHub: \url{https://github.com/albertoHdzE/MOSAICA}.
 \end{itemize}
 \end{itemize}
