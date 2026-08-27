@@ -140,7 +140,7 @@
                         <div class="g2">
                             <h3>Professional Summary</h3>
                             <p>
-                                AI researcher with over 10 years of experience across finance, biology, mathematics, physics, and artificial intelligence, spanning academic research and production systems. My work combines machine learning, causal modeling, and complexity science to study how intelligent behavior emerges under constraints. I have conducted research on network reduction and causal information replication in physical and computational systems, focusing on reducing time, space, and computational resources while preserving explanatory or functional structure. Alongside applied work in quantitative trading and cloud-scale optimization, I have investigated the strengths and limits of large language models and agentic systems using complexity-based methods. My research has been published in peer-reviewed venues in collaboration with Oxford University and Oxford Immune Algorithmics. I currently serve as AI Engineer Lead at K-Square Group, integrating research insights into real-world AI systems.
+                                AI researcher with over 10 years of experience across finance, biology, mathematics, physics, and artificial intelligence, spanning academic research and production systems. My work combines machine learning, causal modeling, and complexity science to study how intelligent behavior emerges under constraints. I have conducted research on network reduction and causal information replication in physical and computational systems, focusing on reducing time, space, and computational resources while preserving explanatory or functional structure. Alongside applied work in quantitative trading and cloud-scale optimization, I have investigated the strengths and limits of large language models and agentic systems using complexity-based methods. In parallel, I build and ship LLM-powered applications for enterprise use: retrieval and NLP pipelines over unstructured data, tool-using and multi-agent orchestration with human-in-the-loop control, and the evaluation and observability layers — benchmark harnesses, automated evaluators, adversarial testing, and telemetry — that make such systems measurable after deployment. My research has been published in peer-reviewed venues in collaboration with Oxford University and Oxford Immune Algorithmics. I currently serve as AI Engineer Lead at K-Square Group, integrating research insights into real-world AI systems.
                             </p>
                             <p class="small">
                                 <a href="CV/albertoEspinosaCV.pdf" target="_blank"><i class="icon-file-text"></i> Download Resume (PDF)</a>
@@ -150,10 +150,10 @@
                             <ul class="no-list work">
                                 <li>
                                     <h5>AI Engineer Lead</h5>
-                                    <span class="label label-info">Jun 2024 – Present</span>
+                                    <span class="label label-info">Nov 2024 – Present</span>
                                     <span class="label">K-Square Group (Remote)</span>
                                     <p>
-                                        Spearhead research and development of AI/ML solutions tailored to specific industry challenges. Design and oversee the creation of advanced agentic systems and complex data processing pipelines, driving innovation and efficiency.
+                                        Lead the design and delivery of LLM-powered applications for enterprise use cases, from prototype through production. Build agentic systems with LangGraph, MCP tool federation, and multi-agent orchestration, including human-in-the-loop approvals and observability through Langfuse and telemetry. Develop document and speech understanding pipelines (OCR, layout-aware extraction, transcription) that prepare unstructured data for retrieval and evaluation, and establish benchmark harnesses and regression suites so model and retrieval choices rest on measured evidence.
                                     </p>
                                 </li>
                                 <li>
@@ -243,20 +243,29 @@
                             <div class="sidebar">
                                 <h3>Skills & Expertise</h3>
                                 
+                                <h5>LLM & NLP Engineering</h5>
+                                <p class="small">Prompt engineering, structured outputs, RAG, GraphRAG, context management, embeddings, model routing, LoRA / parameter-efficient fine-tuning, local and hosted model serving (Ollama, LM Studio), OCR- and speech-derived text pipelines, classical NLP</p>
+
+                                <h5>LLM Evaluation & Responsible AI</h5>
+                                <p class="small">Evaluation frameworks, automated evaluators, regression suites, adversarial and red-team scenarios, retrieval benchmarking, guardrails, human-in-the-loop review, quality / latency / cost tradeoff analysis, Langfuse</p>
+
+                                <h5>Agentic AI</h5>
+                                <p class="small">LangGraph, MCP, tool and function calling, planning, memory, reflection, multi-agent orchestration, human-in-the-loop approvals</p>
+
                                 <h5>AI/ML Technologies</h5>
-                                <p class="small">Python, TensorFlow, PyTorch, Scikit-learn, Keras, LangGraph, Ollama, ML Studio, RAG, Agents, MCP, Small Model Tuning, Multi-Agent Orchestration, Local LLM Orchestration, Langfuse</p>
-                                
+                                <p class="small">Python, PyTorch, TensorFlow, Scikit-learn, Keras, statistical modeling, feature engineering, experimentation pipelines, reinforcement learning</p>
+
                                 <h5>Programming Languages</h5>
-                                <p class="small">Python, R, C++, SQL, Mathematica, FastAPI, React</p>
-                                
+                                <p class="small">Python, SQL, R, C++, Mathematica, FastAPI, React</p>
+
                                 <h5>Cloud & DevOps</h5>
-                                <p class="small">GCP, AWS, Docker, FastAPI, Telemetry, Monitoring, Observability</p>
-                                
+                                <p class="small">AWS (production ML pipelines), GCP (Google Cloud Specialization), Docker, REST APIs, Git, CI/CD, telemetry, monitoring, observability</p>
+
                                 <h5>Data Science</h5>
-                                <p class="small">Big Data, SQL/NoSQL, ETL, Pandas, NumPy, Matplotlib</p>
-                                
+                                <p class="small">Big Data, SQL/NoSQL, ETL, data pipelines for structured and unstructured sources, knowledge graphs, Pandas, NumPy, Matplotlib</p>
+
                                 <h5>Domains</h5>
-                                <p class="small">AI, Complexity Science, Cognitive Science, Reinforcement Learning, Algorithmic Information Theory, Enhancing RAG with Complexity, Agentic systems, Quantitative Trading, Agentic Trading Systems, Deterministic Strategy Generation</p>
+                                <p class="small">AI, Complexity Science, Cognitive Science, Algorithmic Information Theory, AI Alignment, Enhancing RAG with Complexity, Agentic systems, Document and Meeting Understanding, Quantitative Trading, Deterministic Strategy Generation</p>
 
                                 <div class="break"></div>
 
@@ -299,6 +308,56 @@
                           <div class="g2">
                               <h3>Scientific & Engineering Projects</h3>
                               <ul class="no-list work">
+                                  <li>
+                                      <h5>Red Agent <span style="color: #2ecc71">(AI/Evaluation)</span></h5>
+                                      <span class="label label-info">Red-Teaming</span>
+                                      <span class="label">GitHub</span>
+                                      <p>
+                                          A red-teaming multi-agent framework for probing LLM alignment through structured debate, adversarial prompting, and automated evaluation against explicit ethical criteria.
+                                          <br><i>Tests systematically where language models hold their criteria — and where they break.</i>
+                                          <br><a href="https://github.com/albertoHdzE/red-agent" target="_blank">View Project</a>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <h5>Enterprise IT Knowledge Graph <span style="color: #2ecc71">(AI/Enterprise)</span></h5>
+                                      <span class="label label-info">Knowledge Graph</span>
+                                      <span class="label">GitHub</span>
+                                      <p>
+                                          Knowledge-graph platform with LLM-powered question answering over an enterprise IT landscape, linking structured inventory data to natural-language queries.
+                                          <br><i>Makes a complex IT estate answerable in plain language.</i>
+                                          <br><a href="https://github.com/albertoHdzE/eng-ai-platform" target="_blank">View Project</a>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <h5>Homeostat Agent <span style="color: #2ecc71">(AI/Agents)</span></h5>
+                                      <span class="label label-info">Cybernetics</span>
+                                      <span class="label">GitHub</span>
+                                      <p>
+                                          A cybernetic problem-solving agent, named after Ashby's Homeostat (1948), that constructs a solution, verifies it by execution, and iterates on its own failures until the result is proven. The human does not guide the work but supervises it, authorizing the effort budget.
+                                          <br><i>A concrete study of reflection loops and human-in-the-loop control under Ashby's Law of Requisite Variety.</i>
+                                          <br><a href="https://github.com/albertoHdzE/homeostat-agent" target="_blank">View Project</a>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <h5>Meeting Summarizer <span style="color: #2ecc71">(NLP/Speech)</span></h5>
+                                      <span class="label label-info">NLP</span>
+                                      <span class="label">GitHub</span>
+                                      <p>
+                                          Speech-to-text and summarization pipeline combining whisper.cpp transcription with local LLM summarization and translation, surfacing key points, decisions, and action items through a simple web interface.
+                                          <br><i>Turns unstructured audio into reviewable, structured records — entirely locally.</i>
+                                          <br><a href="https://github.com/albertoHdzE/meetssummariser" target="_blank">View Project</a>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <h5>Fraud Detection: Classic ML to Agents <span style="color: #2ecc71">(AI/Finance)</span></h5>
+                                      <span class="label label-info">Applied ML</span>
+                                      <span class="label">GitHub</span>
+                                      <p>
+                                          Comparative study tracing fraud detection from classical supervised models through to agentic approaches, on a common dataset and evaluation protocol.
+                                          <br><i>Measures what each generation of method actually buys, rather than assuming the newest wins.</i>
+                                          <br><a href="https://github.com/albertoHdzE/fdetection" target="_blank">View Project</a>
+                                      </p>
+                                  </li>
                                   <li>
                                       <h5>AG-UI (Agentic User Interface) <span style="color: #2ecc71">(AI/Agents)</span></h5>
                                       <span class="label label-info">AI</span>
@@ -426,7 +485,7 @@
                                       <p>
                                           Experiments with multilayer perceptrons (fully connected feedforward neural networks) trained via backpropagation, used as a baseline model for supervised learning tasks.
                                           <br><i>Provides a minimal, interpretable neural baseline for classification and regression.</i>
-                                          <br><a href="https://github.com/albertoHdzE/GUNS" target="_blank">View Project</a>
+                                          <br><a href="https://github.com/albertoHdzE/FST-MLP" target="_blank">View Project</a>
                                       </p>
                                   </li>
                                   <li>
