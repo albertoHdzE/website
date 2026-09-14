@@ -353,6 +353,20 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   clear: both;
 }
 
+/* Featured work (subtle highlight) */
+.work.featured li{
+  border-bottom: none;
+  border-left: 3px solid #e74c3c;
+  background-color: #fbfbfb;
+  padding: 1em 1.2em;
+  margin-bottom: 1.5em;
+}
+.label-featured{
+  background-color: #e74c3c;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
 /* Portfolio */
 .image{
   position: relative;
