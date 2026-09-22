@@ -309,8 +309,20 @@
                               <h3>Physics &amp; Complexity Science</h3>
                               <ul class="no-list work">
                                   <li>
-                                      <h5>0xPARC Challenges: Exact Representations and Constrained Computation <span style="color: #2ecc71">(Physics)</span></h5>
+                                      <h5>Luminal Challenge: Scheduling and Scratch Allocation as Exact Boolean Queries <span style="color: #2ecc71">(Physics)</span></h5>
                                       <span class="label label-featured">New</span>
+                                      <span class="label label-info">Algorithmic Information</span>
+                                      <span class="label">PDF</span>
+                                      <p>
+                                          A response to the compiler challenge set by <b>Luminal</b>: schedule a program's operations and place its values in a 256-word scratchpad, as cheaply as possible. Every issue cycle and every address is obtained here as the answer to an exact query over Boolean index schemata &mdash; an integer anchor with a free-coordinate mask, denoting every filling of the free coordinates &mdash; so each decision is a minimum witness of a set, not the outcome of a hand-written scan. No decision diagram, no external solver, and no call to the reference compiler take part.
+                                          <br>Measured on the eight public programs, the combined score is <b>2.008466</b> against <b>1.901379</b> for the frozen classical compiler: about 5.63% higher on that composite metric &mdash; not 5.63% less execution time. The gain already occurs during construction; bounded joint optimisation improves six of 100 additional generated programs and none of the eight public ones. Compilation is substantially slower than classical, and the paper reports that trade rather than hiding it.
+                                          <br>Read from complexity science: the representation makes its own limits explicit &mdash; subset-counting and flat-cover parity bounds are proved for the <i>descriptions of sets</i>, not asserted as running-time bounds for the compiler, and UNSAT is local to the queried neighbourhood while an exhausted budget returns UNKNOWN, never silently promoted to UNSAT.
+                                          <br><i>No global optimality, no private-grader result, and no general advantage over modern compiler optimisers is claimed anywhere in the paper.</i>
+                                          <br><a href="papers/luminal-challenge-response.pdf" target="_blank">Download the paper (PDF)</a> &nbsp;&middot;&nbsp; <a href="https://github.com/albertoHdzE/CausalBool/tree/main/luminal-challenge" target="_blank">Compiler and evidence (GitHub)</a>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <h5>0xPARC Challenges: Exact Representations and Constrained Computation <span style="color: #2ecc71">(Physics)</span></h5>
                                       <span class="label label-info">Algorithmic Information</span>
                                       <span class="label">PDF</span>
                                       <p>
