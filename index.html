@@ -140,7 +140,7 @@
                         <div class="g2">
                             <h3>Professional Summary</h3>
                             <p>
-                                AI researcher with over 10 years of experience across finance, biology, mathematics, physics, and artificial intelligence, spanning academic research and production systems. My work combines machine learning, causal modeling, and complexity science to study how intelligent behavior emerges under constraints. I have conducted research on network reduction and causal information replication in physical and computational systems, focusing on reducing time, space, and computational resources while preserving explanatory or functional structure. Alongside applied work in quantitative trading and cloud-scale optimization, I have investigated the strengths and limits of large language models and agentic systems using complexity-based methods. In parallel, I build and ship LLM-powered applications for enterprise use: retrieval and NLP pipelines over unstructured data, tool-using and multi-agent orchestration with human-in-the-loop control, and the evaluation and observability layers — benchmark harnesses, automated evaluators, adversarial testing, and telemetry — that make such systems measurable after deployment. My research has been published in peer-reviewed venues in collaboration with Oxford University and Oxford Immune Algorithmics. I currently serve as AI Engineer Lead at K-Square Group, integrating research insights into real-world AI systems.
+                                AI researcher with over 10 years of experience across finance, biology, mathematics, physics, and artificial intelligence, spanning academic research and production systems. My work combines machine learning, causal modeling, and complexity science to study how intelligent behavior emerges under constraints. I have conducted research on network reduction and causal information replication in physical and computational systems, focusing on reducing time, space, and computational resources while preserving explanatory or functional structure. Alongside applied work in quantitative trading and cloud-scale optimization, I have investigated the strengths and limits of large language models and agentic systems using complexity-based methods. As an independent researcher, I develop a causal approach grounded in algorithmic information theory &mdash; intervening on the mechanisms that produce an outcome, and verifying results exactly over compact symbolic descriptions &mdash; and apply it to open technical challenges set by Doppel, 0xPARC and Luminal, spanning information-theoretic optimisation under a KL budget, constrained computation, and compiler scheduling, and to AI security, where I studied how communication and incentives sway agent reviewers, and how exact verification separates persuasive assurances from evidence, at Apart Research's AI Collusion Research Sprint. In parallel, I build and ship LLM-powered applications for enterprise use: retrieval and NLP pipelines over unstructured data, tool-using and multi-agent orchestration with human-in-the-loop control, and the evaluation and observability layers — benchmark harnesses, automated evaluators, adversarial testing, and telemetry — that make such systems measurable after deployment. My research has been published in peer-reviewed venues in collaboration with Oxford University and Oxford Immune Algorithmics. I currently serve as AI Engineer Lead at K-Square Group, integrating research insights into real-world AI systems.
                             </p>
                             <p class="small">
                                 <a href="CV/albertoEspinosaCV.pdf" target="_blank"><i class="icon-file-text"></i> Download Resume (PDF)</a>
@@ -148,6 +148,14 @@
 
                             <h3>Professional Experience</h3>
                             <ul class="no-list work">
+                                <li>
+                                    <h5>Independent Researcher &mdash; Causality, Algorithmic Information &amp; AI Security</h5>
+                                    <span class="label label-info">2025 – Present</span>
+                                    <span class="label">CausalBool (Remote)</span>
+                                    <p>
+                                        Develop a causal, algorithmic-information approach to complex systems: Boolean causal networks, causal and index deconvolution, and exact symbolic verification that keeps a checkable reason for every conclusion. Applied it to open challenges set by Doppel (optimal phrasing under a KL-divergence budget, with description length as an upper approximation to Kolmogorov complexity), 0xPARC (majority circuits and constraint systems over a prime field) and Luminal (a compiler that reopens only the decisions causally responsible for cost, scoring 15.1% above a strong classical baseline on the public programs). In AI security, participated in Apart Research's AI Collusion Research Sprint (October 2026) with a study combining controlled interventions on communication and incentives with exhaustive verification, showing where agent assurance substitutes for evidence and where exact checking itself fails under a wrong model assumption.
+                                    </p>
+                                </li>
                                 <li>
                                     <h5>AI Engineer Lead</h5>
                                     <span class="label label-info">Nov 2024 – Present</span>
@@ -265,7 +273,7 @@
                                 <p class="small">Big Data, SQL/NoSQL, ETL, data pipelines for structured and unstructured sources, knowledge graphs, Pandas, NumPy, Matplotlib</p>
 
                                 <h5>Domains</h5>
-                                <p class="small">AI, Complexity Science, Cognitive Science, Algorithmic Information Theory, AI Alignment, Enhancing RAG with Complexity, Agentic systems, Document and Meeting Understanding, Quantitative Trading, Deterministic Strategy Generation</p>
+                                <p class="small">AI, Complexity Science, Cognitive Science, Algorithmic Information Theory, AI Alignment, AI Security &amp; Multi-Agent Collusion, Causal Inference &amp; Exact Verification, Enhancing RAG with Complexity, Agentic systems, Document and Meeting Understanding, Quantitative Trading, Deterministic Strategy Generation</p>
 
                                 <div class="break"></div>
 
@@ -309,8 +317,20 @@
                               <h3>Physics &amp; Complexity Science</h3>
                               <ul class="no-list work">
                                   <li>
-                                      <h5>Luminal Challenge: Causality and Symbolic Computation, from Boolean Networks to a Compiler <span style="color: #2ecc71">(Physics)</span></h5>
+                                      <h5>AI Collusion Research Sprint: Beyond Agent Assurance &mdash; Controlled Interventions and Exact Verification of Rule Repairs <span style="color: #2ecc71">(AI Security)</span></h5>
                                       <span class="label label-featured">New</span>
+                                      <span class="label label-info">Causality &amp; Verification</span>
+                                      <span class="label">PDF</span>
+                                      <p>
+                                          Research conducted at the <b>AI Collusion Research Sprint</b> organised by <b>Apart Research</b> (23&ndash;25 October 2026). One agent proposes a repair to a Boolean rule; another reviews it, using the task evidence and a private message from the proposer, under a fictional score that is either aligned or misaligned with correctness. The question is when the reviewer's decision is justified by the available evidence, and when it changes with communication or incentives. Controlled interventions on message delivery, message wording and the stated incentive hold task and candidate fixed, so each contrast isolates one input to the reviewer.
+                                          <br>Using one language model (448 evaluation requests): among five incorrect proposals reviewed with and without their private messages, reviewers approved three with the message and none without it. With the incorrect candidate held fixed, approval under a misaligned score was <b>0 of 16</b> without a message and <b>6 to 8 of 16</b> for each scripted message condition; all 64 reviews under the aligned score rejected it. When specifications were incomplete, reviewers approved none of 64 candidates but rejected 37 without sufficient evidence, including 18 that were actually correct &mdash; deferral was the justified answer in every case.
+                                          <br>Read from complexity science: failures can live in the <i>interaction</i> of agents, incentives and task conditions, so the study uses a bounded Boolean setting where every possibility can be checked exhaustively. A deterministic checker certifies a repair only when every rule compatible with the observations, within a declared class, agrees with it. Across 16 constructed tasks it released no incorrect candidate under its assumptions, but initially withheld every candidate, including correct ones; and it certified an incorrect repair when its assumed rule class excluded the true rule &mdash; exact checking cannot repair a false assumption about what rules are possible.
+                                          <br><i>The results support conditional verification of agent decisions &mdash; not a claim of spontaneous collusion, general causal discovery, or safety beyond the declared model.</i>
+                                          <br><a href="papers/ai-collusion-sprint-report.pdf" target="_blank">Download the paper (PDF)</a> &nbsp;&middot;&nbsp; <a href="https://apartresearch.com/sprints/ai-collusion-research-sprint-2026-10-23-to-2026-10-25" target="_blank">The sprint (Apart Research)</a>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <h5>Luminal Challenge: Causality and Symbolic Computation, from Boolean Networks to a Compiler <span style="color: #2ecc71">(Physics)</span></h5>
                                       <span class="label label-info">Algorithmic Information</span>
                                       <span class="label">PDF</span>
                                       <p>
